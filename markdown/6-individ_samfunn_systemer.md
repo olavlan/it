@@ -250,7 +250,8 @@ Maskinlæring er en helt annen teknikk der vi **ikke** gjør en sekvens av klart
 * **Opprette modell**. For å lage en maskinlæringsalgoritme, definerer vi først en *modell*. En modell er en matematisk struktur med parametre som kan endres. 
 
 En av de enkleste modellene vi kan definere er en førstegradsfunksjon med flere variabler: 
-$$ f(x_1, x_2, x_3, ...) = k_1 x_1 + k_2 x_2 + k_3 x_3 + ...$$
+
+$$f(x_1, x_2, x_3, ...) = k_1 x_1 + k_2 x_2 + k_3 x_3 + ...$$
 
 Her kan for eksempel $x_1$ være lysstyrken til den første pikselen, $x_2$ for den andre pikselen, og så videre. Koeffisientene $k_1, k_2, ...$ er parametrene til modellen. 
 
