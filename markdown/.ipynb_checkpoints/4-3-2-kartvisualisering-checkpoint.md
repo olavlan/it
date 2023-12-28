@@ -63,8 +63,11 @@ fig, ax = plt.subplots()
 plt.show()
 ```
 
+
     
-<img src="4-3-2-kartvisualisering_5_0.png" width=600>
+![png](/home/olav/Documents/it2/markdown/4-3-2-kartvisualisering_5_0.png)
+    
+
 
 Forklaring:
 
@@ -85,7 +88,9 @@ plt.show()
 ```
 
 
-<img src="4-3-2-kartvisualisering_8_0.png" width=600>
+    
+![png](/home/olav/Documents/it2/markdown/4-3-2-kartvisualisering_8_0.png)
+    
 
 
 Forklaring: 
@@ -111,8 +116,10 @@ ax.imshow(image, extent=(left, right, bottom, top))
 plt.show()
 ```
 
+
     
-<img src="4-3-2-kartvisualisering_10_0.png" width=600>
+![png](/home/olav/Documents/it2/markdown/4-3-2-kartvisualisering_10_0.png)
+    
 
 
 Her har vi inkludert parameteren `extent=[left, right, bottom, top]`, som definerer en "boks" i koordinatsystemet der bildet skal legges inn. Merk at sidene må listes i nøyaktig denne rekkefølgen.
@@ -146,8 +153,11 @@ plt.show()
     1.994032483080709
 
 
+
     
-<img src="4-3-2-kartvisualisering_12_1.png" width=600>
+![png](/home/olav/Documents/it2/markdown/4-3-2-kartvisualisering_12_1.png)
+    
+
 
 Sideforholdet mellom $y$ -og $x$-aksen kalles *aspect ratio*, og i dette tilfellet er den omtrent 2. Det betyr at én enhet på $y$-aksen skal være dobbelt så lang som én enhet på $x$-aksen. Vi bruker funksjonen `ax.set_aspect` til å sette ønsket sideforhold. 
 
@@ -181,7 +191,9 @@ plt.show()
 
 
     
-<img src="4-3-2-kartvisualisering_16_0.png" width=600>
+![png](/home/olav/Documents/it2/markdown/4-3-2-kartvisualisering_16_0.png)
+    
+
 
 **4. Sette inn objekter.** Nå er vi klare for å sette inn objekter på kartet. Som eksempel skal vi sette inn følgende stasjon: 
 
@@ -222,7 +234,9 @@ plt.show()
 
 
     
-<img src="4-3-2-kartvisualisering_20_0.png" width=600>
+![png](/home/olav/Documents/it2/markdown/4-3-2-kartvisualisering_20_0.png)
+    
+
 
 Forklaring av parametrene til funksjonen `ax.plot`:
 * De to første parametrene er $x$ og -$y$-verdien der objektet skal plasseres.
@@ -256,8 +270,11 @@ stations.apply(place_on_map, axis=1)
 plt.show()
 ```
 
+
     
-<img src="4-3-2-kartvisualisering_25_0.png" width=600>
+![png](/home/olav/Documents/it2/markdown/4-3-2-kartvisualisering_25_0.png)
+    
+
 
 Men hva om vi nå ønsker at størrelsen til hver sirkel skal indikere populariteten til stasjonen? 
 
@@ -300,6 +317,19 @@ stations.head()
 
 
 <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -413,8 +443,8 @@ plt.show()
 
 
     
-
-<img src="4-3-2-kartvisualisering_35_0.png" width=600>
+![png](/home/olav/Documents/it2/markdown/4-3-2-kartvisualisering_35_0.png)
+    
 
 
 Her har vi visualisert hva som er mest populært som startstasjoner, men kanskje vi også ønsker å visualisere de mest populære endestasjonene?
@@ -466,9 +496,9 @@ plt.show()
 ```
 
 
-
-
-<img src="4-3-2-kartvisualisering_41_0.png" width=600>
+    
+![png](/home/olav/Documents/it2/markdown/4-3-2-kartvisualisering_41_0.png)
+    
 
 
 **Oppsummering.** I denne seksjonen har vi tatt utgangspunkt i en tabell med geografiske punkter, og vist hvordan vi kan visualisere alle punktene som sirkler på et kart. Dersom hvert punkt har en tilknyttet tallverdi, kan dette vises gjennom størrelsen på sirklene. Dette gjør at vi effektivt kan sammenligne punkter eller områder på kartet, og finne trender i dataene.
@@ -550,6 +580,19 @@ stations.head()
 
 
 <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">

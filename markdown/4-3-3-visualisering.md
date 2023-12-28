@@ -75,8 +75,8 @@ plt.show()
 
 
     
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_9_0.png)
-    
+
+<img src="4-3-3-visualisering_9_0.png" width=600>
 
 
 Merk at vi tegner søylene i et *plott*, det vil si et koordinatsystem med en $x$ -og $y$-akse. Det er Python-pakken [*matplotlib.pyplot*](https://matplotlib.org/3.5.3/index.html) som brukes, og vi har importert pakken under navnet `plt`. 
@@ -95,9 +95,7 @@ plt.show()
 
 
     
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_11_0.png)
-    
-
+<img src="4-3-3-visualisering_11_0.png" width=600>
 
 I dette diagrammet er det lett å se at den gjennomsnittlige varigheten til sykkelturer øker når vi kommer nærmere helgen.
 
@@ -191,10 +189,9 @@ plt.show()
 ```
 
 
-    
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_19_0.png)
-    
 
+    
+<img src="4-3-3-visualisering_19_0.png" width=600>
 
 Fra dette søylediagrammet kan vi hente mer spesifikk informasjon. For eksempel ser vi at økningen som skjer i helgen hovedsakelig skyldes sykkelturer som starter på morgen og ettermiddag.
 
@@ -257,9 +254,8 @@ plt.show()
 
 
     
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_27_0.png)
     
-
+<img src="4-3-3-visualisering_27_0.png" width=400>
 
 Forklaring: 
 
@@ -282,9 +278,8 @@ plt.show()
 
 
     
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_30_0.png)
-    
 
+<img src="4-3-3-visualisering_30_0.png" width=400>
 
 Her ser vi at ettermiddag og morgen er de mest populære periodene på dagen. Men hva om vi ønsker et kakediagram for hverdagsturer, og et kakediagram for helgesturer, slik at vi kan sammenligne gruppene? 
 
@@ -347,10 +342,9 @@ plt.show()
 ```
 
 
-    
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_36_0.png)
-    
 
+    
+<img src="4-3-3-visualisering_36_0.png" width=400>
 
 Deretter viser vi fordelingen for helger:
 
@@ -362,8 +356,7 @@ plt.show()
 
 
     
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_38_0.png)
-    
+<img src="4-3-3-visualisering_38_0.png" width=400>
 
 
 Hvilke forskjeller kan du se mellom turer som startet på hverdag og helg? 
@@ -511,9 +504,7 @@ plt.show()
 
 
     
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_55_0.png)
-    
-
+<img src="4-3-3-visualisering_55_0.png" width=600>
 
 Her ser vi for eksempel at klokketimen 6 (altså mellom 6:00 og 6:59) er spesielt populær. Vi har altså fått med flere detaljer i fordelingen enn vi kunne med et kakediagram.
 
@@ -540,9 +531,7 @@ plt.show()
 
 
     
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_61_0.png)
-    
-
+<img src="4-3-3-visualisering_61_0.png" width=600>
 
 Diagrammet viser antall turer på hver klokketime, og gir en veldig god oversikt over hvordan sykkelturene fordeler seg med tanke på klokkeslett.
 
@@ -576,9 +565,7 @@ plt.show()
 
 
     
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_65_0.png)
-    
-
+<img src="4-3-3-visualisering_65_0.png" width=600>
 
 Dette diagrammet kalles et *histogram*, og skiller seg fra et søylediagram ved at gruppene er små intervaller på tallinja.  Vi har brukt [*seaborn*](https://seaborn.pydata.org/), som er en Python-pakke for statistiske datavisualiseringer. Med funksjonen `histplot` kan vi lage det ønskede histogrammet:
 
@@ -599,9 +586,7 @@ plt.show()
 
 
     
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_67_0.png)
-    
-
+<img src="4-3-3-visualisering_67_0.png" width=600>
 
 Med denne grafen får vi et overblikk over hvilke avstander som er mest forekommende. Vi trenger ikke å forstå nøyaktig hva tallene på $y$-aksen betyr, men dersom vi integrerer hele grafen, blir svaret 1. Det betyr at arealet mellom to punkter kan gi oss nyttig informasjon.
 
@@ -651,9 +636,7 @@ plt.show()
 
 
     
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_71_0.png)
-    
-
+<img src="4-3-3-visualisering_71_0.png" width=600>
 
 Her har vi fått med gjennomsnitt -og medianverdi i diagrammet. Medianverdien deler grafen opp i to deler med like stort areal. Sagt på en annen måte; det er like mange sykkelturer til venstre og høyre for medianverdien. 
 
@@ -674,10 +657,9 @@ plt.show()
 ```
 
 
-    
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_73_0.png)
-    
 
+
+<img src="4-3-3-visualisering_73_0.png" width=600>
 
 Her ser vi at 50 % av turene faller omtrent innenfor 1-2 km.
 
@@ -728,10 +710,9 @@ kdeplot_with_info(trips["started_at_as_decimal"])
 ```
 
 
-    
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_80_0.png)
-    
 
+    
+<img src="4-3-3-visualisering_80_0.png" width=600>
 
 Mediantidspunktet for en sykkeltur er 13.71, som svarer til klokkeslettet 13:43 (fordi 71% av en time er 43 minutter). Videre ser vi at 90% av sykkelturer skjer mellom 5.85 og 20.68 (hvilke klokkelsett svarer dette til?). 
 
@@ -766,33 +747,14 @@ Med denne koden har vi opprettet to filer:
 * *kde-weekday.pdf* 
 
 
-```python
-table = tables[0]
-label = labels[0]
-
-kdeplot_with_info(table["started_at_as_decimal"])
-```
-
-
-    
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_86_0.png)
-    
+<img src="4-3-3-visualisering_86_0.png" width=600>
 
 
 * *kde-weekend.pdf*
 
 
-```python
-table = tables[1]
-label = labels[1]
+<img src="4-3-3-visualisering_88_0.png" width=600>
 
-kdeplot_with_info(table["started_at_as_decimal"])
-```
-
-
-    
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_88_0.png)
-    
 
 
 Her kan vi se at toppunktet kl. 7 har blitt veldig tydelig på hverdager, mens i helger finner vi ikke et tilsvarende toppunkt!
@@ -810,7 +772,7 @@ Her kan vi se at toppunktet kl. 7 har blitt veldig tydelig på hverdager, mens i
 
 Sammenlign grafene 1a-1b og 2a-2c. Hvilke forskjeller finner du? Hva tror du er årsaken til forskjellene?
 
-## Ekstra funksjon
+## Funksjoner
 
 
 ```python
@@ -938,10 +900,7 @@ plt.show()
 ```
 
 
-    
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_95_0.png)
-    
-
+<img src="4-3-3-visualisering_95_0.png" width=600>
 
 
 ```python
@@ -971,9 +930,8 @@ plt.show()
 ```
 
 
-    
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_98_0.png)
-    
+
+<img src="4-3-3-visualisering_98_0.png" width=600>
 
 
 
@@ -1004,9 +962,8 @@ plt.show()
 ```
 
 
-    
-![png](/home/olav/Documents/it2/markdown/4-3-3-visualisering_100_0.png)
-    
+
+<img src="4-3-3-visualisering_100_0.png" width=600>
 
 
 
