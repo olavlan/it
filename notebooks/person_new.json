@@ -1,0 +1,16 @@
+{
+    "fornavn": "Kari",
+    "etternavn": null,
+    "alder": 52,
+    "interesser": [
+        "sjakk",
+        "fotografering",
+        "fuglekikking"
+    ],
+    "bolig": {
+        "type": "leilighet",
+        "st\u00f8rrelse": 100,
+        "sted": "Trondheim"
+    },
+    "harHusdyr": true
+}

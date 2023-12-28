@@ -1,0 +1,11 @@
+{
+    "fornavn": "Kari",
+    "etternavn": null,
+    "alder": 42, 
+    "interesser": ["sjakk", "fotografering"],
+    "bolig": {
+        "type": "leilighet", 
+        "størrelse": 100, 
+        "sted": "Trondheim"}, 
+    "harHusdyr": true
+}

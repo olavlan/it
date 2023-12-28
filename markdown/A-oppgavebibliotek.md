@@ -1,0 +1,108 @@
+# Oppgavebibliotek
+
+## Objektorientert programmering
+
+**Når og hvorfor brukes objektorientert programmering?**
+
+**Aktivitet A.** Tenk deg at du skal lage følgende programmer - ville du brukt prosedyreorientert eller objektorientert programmering? Begrunn valget. 
+
+1. Et program som leser en fil med hastighetdata, og som bruker dette til å estimere distansen. For eksempel har du kanskje vært på sykkeltur og registrert hastigheten hvert sekund med et speedometer. Du ønsker å vite omtrent hvor langt du har syklet.
+2. Et program for et bibliotek, som holder oversikt over hvilke bøker som er tilgjengelige og hvilke som er utlånt. Det skal være mulig å registrere utlån og innlevering. 
+3. Et program som leser en fil med GPS-data for en tur. Filen inneholder en liste med koordinater, som for eksempel er registrert hvert sekund. Programmet skal estimere lengden på turen, samt estimere hvor lenge man var i bevegelse og hvor lenge man tok pause.
+
+**Prosjektoppgave 1.** Kan du tenke på et program som du har lyst til å lage? Hvis ja, beskriv hvilke funksjoner du ønsker at programmet skal ha. Vurder deretter om prosedyreorientert eller objektorientert programmering er mest egnet, og begrunn svaret.
+
+Dersom du kom fram til at prosedyreorientert programmering var mest egnet, forsøk å utvide idéen slik at det passer for objektorientert programmering.
+
+*Velg en idé som du synes virker interessant, selv om det virker for vanskelig å kode! I dette kapitlet skal vi kun planlegge programmet!* 
+
+---
+
+**Hva er objekter?**
+
+**Aktivitet A.** Se rundt deg og skriv ned noen objekter. 
+
+1. Er noen objekter inneholdt i andre eller tilknyttet på en annen måte? 
+2. Hvilke kategorier finnes? 
+3. Finn objekter som er i forskjellige kategorier, men som har noe til felles. Bruk dette til å lage større kategorier. Gi meningsfulle navn til de større kategoriene. 
+
+**Aktivitet B.** Tenk deg at du skal starte opp en butikk. Velg selv hvilke varer og/eller tjenester du vil tilby. Du ønsker nå et program for å holde oversikt over varebeholdning, fortjeneste og annet. 
+
+1. Skriv en kravspesifikasjon, altså noen setninger om hvilke funksjoner du ønsker at programmet skal ha. 
+2. Tegn de relevante objektene i et diagram. Skill mellom forskjellig typer objekter, og få fram relasjoner mellom objekter (det er ikke så viktig hvordan du gjør det, så lenge det gir mening for deg og du kan forklare diagrammet). 
+3. Hvilke egenskaper og handlinger har objektene? 
+4. Hvis du mangler noen handlinger fra kravspesifikasjonen, tenk over hvilke objekter handlingene gjøres på, og legg til disse objektene i modellen.
+
+**Aktivitet C.** Under følger kravspesifikasjoner for noen etterspurte programmer. For hver av dem, svar på punktene 2-4 fra *Aktivitet B*. 
+
+* Et hotell ønsker et program for å håndtere rombestillinger. Programmet skal kunne sjekke om et bestemt rom er ledig en gitt periode og ta imot en rombestilling. Vi ønsker også å kunne vise alle ledige rom en gitt periode. 
+* En takeaway-restaurant ønsker et program for å holde oversikt over meny, beholdning av råvarer og bestillinger. Man ønsker å kunne vise tilgjengelige retter (basert på varebeholdning), samt liste over råvarer som eventuelt mangler. Restauranten skal ta imot bestillinger fra klokken tre hver dag, registrere når bestillinger fullføres, og kunne vise en liste over gjenstående bestillinger.
+
+**Prosjektoppgave 2.** Ta utgangspunkt i *Prosjektoppgave 1* fra forrige seksjon. Svar på alle spørsmålene i *Aktivitet B*, men for ditt eget prosjekt. 
+
+----
+
+**Hva er en klasse?**
+
+**Aktivitet A.** Ta utgangspunkt i *Aktivitet B* fra forrige seksjon. Se på objektene i modellen. Hvilke klasser kommer objektene fra? Tegn et klassediagram etter eksemplet gitt i forrige seksjon. Få med alle relevante datafelter og handlinger.
+
+**Prosjektoppgave 3.** Ta utgangspunkt i *Prosjektoppgave 2* fra forrige seksjon og tegn et klassediagram (som i aktiviteten over).
+
+----
+
+**Mer om objekter og klasser**
+
+**Prosjektoppgave 4.**
+
+Ta utgangspunkt i *Prosjektoppgave 3* fra forrige kapittel og gjør følgende oppgaver:
+
+1. Skriv opp noen objekter som kommer fra klassene i klassediagrammet ditt (følg eksemplene gitt i seksjonen *Skrivemåte for objekter*). 
+2. Gjør klassediagrammet mer detaljert ved å skrive datatyper på alle datafelter og metoder (følg eksemplene gitt i seksjonen *Datatyper*). På metodene skal du skrive datatypen til returverdien.
+3. Følg eksemplet i seksjonen *Objektdiagram og pekere* til å tegne objektene fra punkt 1. Sørg for å få med pekere mellom objekter!
+4. Tenk over hvilke steg som må utføres for hver av metodene i klassediagrammet. Kan du finne en metode som krever flere steg? Forsøk i så fall å dele opp denne metoden i delmetoder (følg eksemplet gitt i seksjonen *Oppdeling av metoder*).
+5. Tegn et flytdiagram for metoden i punkt 4 (følg eksemplet gitt i seksjonen *flytdiagram*).
+6. Kan du lage en metode som fungerer ved å sende meldinger til alle objekter? Her er noen eksempler som kan være til hjelp.
+    * Tenk at man har klassene `Butikk` og `Vare`, og den sistnevnte har metoden `antall_dager_til_utgått()`. Da kan `Butikk` ha en metode som lister alle varer som utgår om mindre enn én uke.
+    * Tenk at man har klassene `Videobibliotek` og `Video`, og den sistnevnte har metoden `komprimer_video()`. Da kan `Videobibliotek` ha en metode som komprimerer alle videoene i biblioteket.
+7. Vis hvordan objektene i oppgave 6 kommuniserer ved å følge tegningen i seksjonen *Kommunikasjon mellom objekter*. Hvilken metode må være offentlig for at kommunikasjonen skal være mulig? 
+8. Følg eksemplene gitt i seksjonen *Konstruktører*, og definer minst én konstruktør i hver av klassene. Gjør klassediagrammet mer detaljert ved å legge til konstruktørene, samt å markere hvilke metoder som må være offentlige. Marker datafeltene og resten av metodene som private.
+9. Vurder nå om flere av de private metodene bør gjøres offentlige. Du må tenke over om metoden bare skal brukes innad i et objekt, eller om andre objekter skal kunne bruke metodene.
+10. Følg eksemplet gitt i seksjonen *Dokumentasjon av metoder*; skriv en dokumentasjon av alle metoder som du har valgt å gjøre offentlige. 
+11. Finn ut om en av klassene dine har datafelter og metoder som kan legges i en ny klasse. Gi et passende navn til denne klassen og tegn den i diagrammet. Vis avhengigheten mellom de to klassene etter oppdelingen (følg figurene i seksjonen *Oppdeling av klasser*).
+
+----
+
+**Arv**
+
+**Prosjektoppgave 5.** Ta utgangspunkt i klassediagrammet du har fra *Prosjektoppgave 4*. Finnes det to klasser som har både datafelter og metoder til felles? Hvis ja, flytt disse egenskapene og metodene til en superklasse, og gi denne et passende navn. Tegn opp det nye klassediagrammet, der du også viser "arver fra"-relasjonene mellom klassene. 
+
+----
+
+**Klasser og objekter i Python**
+
+**Prosjektoppgave 6.** Ta utgangspunkt i det ferdige klassediagrammet du har fra prosjektoppgavene i kapitlet *Konsepter i objektorientert programmering*. Gjør følgende oppgaver: 
+
+1. Opprett én Python-fil for hele prosjektet. Senere skal vi vise hvordan vi kan fordele koden i flere filer, men på dette stadiet skal vi ha all kode i én fil. 
+2. Opprett klassen med én konstruktør (følg eksemplet gitt i seksjonen *Sette inn en konstruktør*.
+3. Forsøk å lage en metode som skrive ut en setning om et objekt fra klassen (følg eksemplet gitt i seksjonen *Sette inn metoder*).
+4. Forsøk å opprette noen objekter fra klassen, og bruk metoden du lagde i punkt 3 til å skrive ut en setning om hver av objektene. Denne koden kan du skrive under klasseblokken.
+5. Gjenta steg 1-4 med alle de andre klassene i klassediagrammet. Det skal være en fil for hver klasse. Dersom noen av klassene dine har flere konstruktører, kan du følge eksemplet gitt i seksjonen *Sette inn flere konstruktører*. Dersom noen av konstruktørene dine skal gjøre flere operasjoner, trenger du ikke å skrive kode for disse; du kan i stedet lage en funksjon som returnerer standardverdier.
+
+----
+
+**Mer om klasser og objekter i Python**
+
+**Prosjektoppgave 7.** Ta utgangspunkt i klassediagrammet og Python-filene du har fra de forrige prosjektoppgavene. Gjør følgende oppgaver:
+
+1. Definer alle metoder i sine riktige klasser. Her trenger du bare å skrive `return` i selve metodeblokken, men du skal sørge for at metodene er riktig definert med tanke på parametre, og om metoden skal være offentlig eller privat.
+2. Dersom du har delmetoder, skal du nå skrive kode i disse. Tegn gjerne figurer som vist i seksjonen *Delmetoder*, slik at du enkelt kan se hvilke metoder som er lurt å starte med. På dette stadiet trenger ikke delmetodene å returnere riktige verdier! Det er nok at delmetodene returnerer noen testverdier.
+3. Skriv kode for resten av metodene. Når du skriver kode for en metode som er oppdelt, er det viktig at du tar i bruk delmetodene. Fortsett å bruke testverdier når det er nødvendig. Forsøk å gjøre koden så oversiktlig som mulig, ved å dele den opp i noen enkle steg.
+4. Finnes kommunikasjon mellom objekter i koden? Finn i så fall kodelinjene der dette skjer.
+6. Marker alle datafelter som private, og opprett offentlige *set*-metoder for de datafeltene som det skal være mulig å endre. Vurder om noen av metodene bør sjekke at parameteren har en gyldig verdi.
+7. Opprett offentlige *get*-metoder for de datafeltene som det skal være mulig å hente. Husk at dersom et datafelt har et muterbart objekt, så må du returnere en kopi av objektet. 
+8. Skriv dokumentasjon av alle klasser og metoder ved å bruke *docstring*.
+9. Har du noen klasser som arver fra en superklasse? Hvilken endring må du gjøre for at disse klassene arver datafeltene metodene til superklassen? 
+10. Opprett en mappe for prosjektet ditt, og sørg for at hver klasse er i sin egen modul (sin egen fil). Hvilken ekstra fil må du opprette for at prosjektet ditt skal bli en pakke?
+11. Overskriv metoden `__str__()` i hver av klassene dine, og sørg for at denne returnerer en streng som gir en beskrivelse av objektet.
+12. Åpne kommandolinjen og importer modulene fra pakken din. Opprett objekter, minst ett objekt fra hver klasse. Forsøk å printe ut objektene. Test alle de offentlige metodene som objektene dine tilbyr, og print ut resultatene. Er utskriftene som forventet?
+13. Dersom utskfriftene ikke er som forventet, bruk `pdb` til finne ut hvor feilen skjer, og rett programmet.

@@ -1,0 +1,14 @@
+<svg width="600" height="100"> 
+<line x1="0" y1="0" x2="100" y2="100" stroke="black"/>
+<line x1="0" y1="100" x2="100" y2="0" stroke="black"/>
+<circle cx="100" cy="50" r="35" fill="white" stroke="black"/>
+<line x1="100" y1="0" x2="200" y2="100" stroke="black"/>
+<line x1="100" y1="100" x2="200" y2="0" stroke="black"/>
+<circle cx="200" cy="50" r="35" fill="white" stroke="black"/>
+<line x1="200" y1="0" x2="300" y2="100" stroke="black"/>
+<line x1="200" y1="100" x2="300" y2="0" stroke="black"/>
+<circle cx="300" cy="50" r="35" fill="white" stroke="black"/>
+<line x1="300" y1="0" x2="400" y2="100" stroke="black"/>
+<line x1="300" y1="100" x2="400" y2="0" stroke="black"/>
+<circle cx="400" cy="50" r="35" fill="white" stroke="black"/>
+</svg>
