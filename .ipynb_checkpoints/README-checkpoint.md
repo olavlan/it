@@ -11,7 +11,7 @@
 
 3. Objektorientert programmering i Python   
 	[3.1 Klasser og objekter i Python](markdown/3-1-oop_python.md)   
-	[3.2 Mer om klasser og objekter i Python](markdown/3-2-oop_python.md)
+	[3.2 Mer om klasser og objekter i Python](markdown/3-2-oop_python_mer.md)
 
 4. Datahåndtering   
 	[4.1 Introduksjon og datastrukturer](markdown/4-1-introduksjon.md)    
