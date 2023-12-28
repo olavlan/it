@@ -1,7 +1,6 @@
 # Informasjonsteknologi
 
-1. Algoritmer
-    [1.1. Algoritmer, pseudokode og flytdiagram](markdown/1-1-algoritmer.md)   
+1. [Algoritmer](markdown/1-1-algoritmer.md)   
    
 3. Konsepter i objektorientert programmering
 
