@@ -2,7 +2,7 @@
 
 1. [Algoritmer](markdown/1-1-algoritmer.md)   
    
-2. Konsepter i objektorientert programmering
+2. Konsepter i objektorientert programmering    
 	[2.1 Når og hvorfor brukes objektorientert programmering?](markdown/2-1-introduksjon.md)   
 	[2.2 Hva er objekter?](markdown/2-2-objekter.md)   
 	[2.3 Hva er en klasse?](markdown/2-3-klasser.md)   
